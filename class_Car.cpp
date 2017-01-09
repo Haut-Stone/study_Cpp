@@ -7,7 +7,7 @@
 * @Author: Haut-Stone
 * @Date:   2017-01-09 20:51:39
 * @Last Modified by:   Haut-Stone
-* @Last Modified time: 2017-01-09 21:11:03
+* @Last Modified time: 2017-01-09 22:17:49
 */
 #include <iostream>
 #include <cstdio>
@@ -37,6 +37,6 @@ public:
 
 int main(void)
 {
-	
+
     return 0;
 }
