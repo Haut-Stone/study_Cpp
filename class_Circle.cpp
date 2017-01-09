@@ -7,7 +7,7 @@
 * @Author: Haut-Stone
 * @Date:   2017-01-09 22:19:42
 * @Last Modified by:   Haut-Stone
-* @Last Modified time: 2017-01-09 22:37:11
+* @Last Modified time: 2017-01-09 22:51:09
 */
 #include <iostream>
 #include <cstdio>
@@ -75,14 +75,6 @@ void Circle::Print(){
 	Center.Print();
 	cout<<";Radius = " <<radius<<endl;
 }
-
-
-
-
-
-
-
-
 
 //测试主函数
 int main(void)
