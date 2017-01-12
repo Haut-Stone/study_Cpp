@@ -7,7 +7,7 @@
 * @Author: Haut-Stone
 * @Date:   2017-01-11 20:55:10
 * @Last Modified by:   Haut-Stone
-* @Last Modified time: 2017-01-11 21:51:41
+* @Last Modified time: 2017-01-12 16:59:32
 */
 #include <iostream>
 #include <cstdio>
@@ -45,15 +45,21 @@ void Person::walking(int k, int v){
 	}
 }
 
-
-class Singer: public Person{
+class Date{
+private:
+protected:
+	int year;
+	int month;
+	int day;
 public:
-	void sing();
+	Date(){year = 1900, month = day = 1;}
+	void init(int ,int ,int );
+	void print_ymd();
+	void print_mdy();
 };
-	
 
 int main(void)
 {
-	Singer i;
+
     return 0;
 }
