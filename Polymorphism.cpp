@@ -7,7 +7,7 @@
 * @Author: Haut-Stone
 * @Date:   2017-01-14 19:44:11
 * @Last Modified by:   Haut-Stone
-* @Last Modified time: 2017-01-14 20:21:19
+* @Last Modified time: 2017-01-14 20:29:37
 */
 #include <iostream>
 #include <cstdio>
@@ -28,7 +28,7 @@ public:
 
 class MobialA:public Mobial{
 public:
-	MobialA(){}
+	MobialA(){}//构造函数不可以是虚函数
 	virtual void showInfo(){
 		cout<<"this is a mobial A"<<endl;
 	}
