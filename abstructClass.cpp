@@ -7,7 +7,7 @@
 * @Author: Haut-Stone
 * @Date:   2017-01-14 20:31:42
 * @Last Modified by:   Haut-Stone
-* @Last Modified time: 2017-01-14 20:41:51
+* @Last Modified time: 2017-01-15 11:50:08
 */
 #include <iostream>
 #include <cstdio>
@@ -16,14 +16,16 @@
 #include <cstring>
 using namespace std;
 
-const double PI = 3.1415926
+const double PI = 3.1415926;
 
-class Shape{//抽象类
+//抽象类
+class Shape{
 public:
 	virtual double area() = 0;//纯虚函数
 	virtual double cf() = 0;
 };
 
+//矩形类
 class Rectangle:public Shape{
 private:
 	int hight, width;
@@ -43,7 +45,8 @@ public:
 	}
 };
 
-class Circle:public Shape{//
+//圆类
+class Circle:public Shape{
 private:
 	int x, y;
 	int r;
@@ -61,6 +64,7 @@ public:
 	}
 };
 
+//test
 int main(void)
 {
 
