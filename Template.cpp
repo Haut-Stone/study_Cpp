@@ -7,7 +7,7 @@
 * @Author: Haut-Stone
 * @Date:   2017-01-15 23:18:49
 * @Last Modified by:   Haut-Stone
-* @Last Modified time: 2017-01-15 23:55:41
+* @Last Modified time: 2017-01-16 00:03:18
 */
 //C++标准模版
 #include <iostream>
@@ -28,6 +28,7 @@ int main(void)
 	v.push_back(2);
 	v.insert(v.begin(), 3);
 	v.pop_back();
+	v.erase(v.begin()+1, v.end()-3);
 	for(int i=0;i<v.size();i++){
 		printf("%d ", v[i]);
 	}
