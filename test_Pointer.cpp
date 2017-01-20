@@ -7,7 +7,7 @@
 * @Author: Haut-Stone
 * @Date:   2017-01-19 12:14:59
 * @Last Modified by:   Haut-Stone
-* @Last Modified time: 2017-01-19 18:14:36
+* @Last Modified time: 2017-01-19 22:26:10
 */
 
 #include <iostream>
@@ -26,13 +26,14 @@ using namespace std;
  */
 
 //关于宏定义，是不是可以用作调试呢？还是有别的用处？
-#if 0
-	//ToDo
-
-#endif
 
 void testa()
 {
+	//条件编译，用于函数中的调试
+	#if 0
+	printf("nihao\n");
+
+	#endif
 	printf("testa\n");
 	//let`s begin with 5 vars
 	int a = 112; 
@@ -99,7 +100,15 @@ void teste()
 }
 
 void testf()
-{
+{	
+	printf("testf\n");
+	int a[10], *p1;
+	p1 = a;
+	//If you want to know how to make a pointer to 2D array....
+	//look...
+	int b[10][10];
+	int (*p2)[10];//just like this!!
+	p2 = b;
 
 }
 int main(void)
